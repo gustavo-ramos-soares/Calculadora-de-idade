@@ -1,34 +1,32 @@
-
 <!DOCTYPE html>
-
 <html lang="pt-br">
-
 <head>
     <title>Calculadora de idade</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/botoes.css">
+    <link rel="stylesheet" href="./css/relogio.css">
+    <link rel="stylesheet" href="./css/calculadora.css">
     <script src="./js/script.js" defer></script>
 </head>
-
 <body>
-
-    <header class="headerTopo">
-        
+    <header class="headerTopo">  
         <div>
-            CalculadoraYearsOld.org
+            <i class="fa-sharp fa-solid fa-calendar"></i><span>CalculadoraYearsOld.org</span>
         </div>
-
         <div>
             <button type="button" id="btnTema" class="btnTema" >
                 <i class="fa-solid fa-sun"></i>
             </button>
         </div>
-
     </header>
-
     <main>
+        <div id="relogio" class="relogio">
+            00:00:00
+        </div>
 
         <div id="calculadora">
 
@@ -44,17 +42,17 @@
 
                     <div class="campo">
                         <label for="diaNas">Dia:</label>
-                        <input type="number" id="diaNas" min="1" max="31" placeholder="DD">
+                        <input type="number" id="diaNas" min="1" max="31" placeholder="DD" required>
                     </div>
 
                     <div class="campo">
                         <label for="mesNas">Mês:</label>
-                        <input type="number" id="mesNas" min="1" max="12" placeholder="MM">
+                        <input type="number" id="mesNas" min="1" max="12" placeholder="MM" required>
                     </div>
 
                     <div class="campo">
                         <label for="anoNas">Ano:</label>
-                        <input type="number" id="anoNas" min="1900" placeholder="AAAA">
+                        <input type="number" id="anoNas" min="1900" placeholder="AAAA" required>
                     </div>
 
                 </div>
@@ -68,13 +66,9 @@
         </div>
 
         <div id="res" class="res"></div>
-
     </main>
-
     <footer>
         <p>&copy; Desenvolvido por Gustavo Ramos</p>
     </footer>
-
 </body>
-
 </html>

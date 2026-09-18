@@ -32,7 +32,6 @@ function calcularIdade() {
     let idadeAnoPessoa = anoAtual - aNas
 
 
-
     // Se os dias forem negativos,
     // pega emprestado dias do mês anterior
 
@@ -54,8 +53,6 @@ function calcularIdade() {
         idadeMesPessoa += 12
     }
 
-
-
     // Resultado
 
     let res = document.getElementById('res')
@@ -63,7 +60,7 @@ function calcularIdade() {
     res.innerHTML = `Você tem ${idadeAnoPessoa} anos, ${idadeMesPessoa} meses e ${idadeDiaPessoa} dias.`
 }
 
-
+// Alterar tema
 
 btnTema.addEventListener('click', alterarTema)
 
@@ -80,3 +77,24 @@ function alterarTema() {
         btnTema.innerHTML = '<i class="fa-solid fa-sun"></i>'
     }
 }
+
+//relogio 
+
+function atualizarRelogio() {
+
+    let data = new Date()
+
+    let horas = String(data.getHours()).padStart(2, '0')
+    let minutos = String(data.getMinutes()).padStart(2, '0')
+    let segundos = String(data.getSeconds()).padStart(2, '0')
+
+    let horaAtualCompleta = `${horas}:${minutos}:${segundos}`
+
+    let boxRelogio = document.getElementById('relogio')
+
+    boxRelogio.textContent = horaAtualCompleta
+}
+
+atualizarRelogio()
+
+setInterval(atualizarRelogio, 1000)

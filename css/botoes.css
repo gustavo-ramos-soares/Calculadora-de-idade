@@ -1,0 +1,40 @@
+.btnTema {
+    font-size: 2rem;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    color: var(--cor-texto);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnTema .fa-sun{
+    color: var(--cor-botao);
+}
+
+.btnTema .fa-moon{
+    color: white;
+}
+
+.fa-calendar{
+    color: var(--cor-texto);
+}
+
+.btnCalcular {
+    width: 100%;
+    padding: 15px;
+    margin-top: 25px;
+    background-color: var(--cor-botao);
+    color: var(--cor-texto-botao);
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.btnCalcular:hover {
+    background-color: var(--cor-hover);
+}

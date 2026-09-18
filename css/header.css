@@ -1,0 +1,10 @@
+.headerTopo {
+    background-color: var(--cor-header);
+    min-height: 70px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
