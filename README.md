@@ -13,3 +13,17 @@ Neste projeto pratiquei:
 
 Cada projeto é uma oportunidade de aprender algo novo e evoluir na prática.
 
+## Preview
+
+### Desktop
+
+![desktop](./assets/127.0.0.1-Calculadora-de-idade-index.html.png)
+
+## Demonstração
+
+![vídeo do projeto](./assets/)
+
+
+## Desenvolvido por
+
+Gustavo Ramos
