@@ -17,10 +17,6 @@
     color: white;
 }
 
-.fa-calendar{
-    color: var(--cor-texto);
-}
-
 .btnCalcular {
     width: 100%;
     padding: 15px;
